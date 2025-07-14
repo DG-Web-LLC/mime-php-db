@@ -1,0 +1,2726 @@
+<?php
+return array (
+  'by-name' => 
+  array (
+    'text/html' => 
+    array (
+      'name' => 'text/html',
+      'extensions' => 
+      array (
+        0 => 'html',
+        1 => 'htm',
+        2 => 'shtml',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'text/css' => 
+    array (
+      'name' => 'text/css',
+      'extensions' => 
+      array (
+        0 => 'css',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'text/xml' => 
+    array (
+      'name' => 'text/xml',
+      'extensions' => 
+      array (
+        0 => 'xml',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'image/gif' => 
+    array (
+      'name' => 'image/gif',
+      'extensions' => 
+      array (
+        0 => 'gif',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'image/jpeg' => 
+    array (
+      'name' => 'image/jpeg',
+      'extensions' => 
+      array (
+        0 => 'jpeg',
+        1 => 'jpg',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/javascript' => 
+    array (
+      'name' => 'application/javascript',
+      'extensions' => 
+      array (
+        0 => 'js',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/atom+xml' => 
+    array (
+      'name' => 'application/atom+xml',
+      'extensions' => 
+      array (
+        0 => 'atom',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/rss+xml' => 
+    array (
+      'name' => 'application/rss+xml',
+      'extensions' => 
+      array (
+        0 => 'rss',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'text/mathml' => 
+    array (
+      'name' => 'text/mathml',
+      'extensions' => 
+      array (
+        0 => 'mml',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'text/plain' => 
+    array (
+      'name' => 'text/plain',
+      'extensions' => 
+      array (
+        0 => 'txt',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'text/vnd.sun.j2me.app-descriptor' => 
+    array (
+      'name' => 'text/vnd.sun.j2me.app-descriptor',
+      'extensions' => 
+      array (
+        0 => 'jad',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'text/vnd.wap.wml' => 
+    array (
+      'name' => 'text/vnd.wap.wml',
+      'extensions' => 
+      array (
+        0 => 'wml',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'text/x-component' => 
+    array (
+      'name' => 'text/x-component',
+      'extensions' => 
+      array (
+        0 => 'htc',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'image/avif' => 
+    array (
+      'name' => 'image/avif',
+      'extensions' => 
+      array (
+        0 => 'avif',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'image/png' => 
+    array (
+      'name' => 'image/png',
+      'extensions' => 
+      array (
+        0 => 'png',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'image/svg+xml' => 
+    array (
+      'name' => 'image/svg+xml',
+      'extensions' => 
+      array (
+        0 => 'svg',
+        1 => 'svgz',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'image/tiff' => 
+    array (
+      'name' => 'image/tiff',
+      'extensions' => 
+      array (
+        0 => 'tif',
+        1 => 'tiff',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'image/vnd.wap.wbmp' => 
+    array (
+      'name' => 'image/vnd.wap.wbmp',
+      'extensions' => 
+      array (
+        0 => 'wbmp',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'image/webp' => 
+    array (
+      'name' => 'image/webp',
+      'extensions' => 
+      array (
+        0 => 'webp',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'image/x-icon' => 
+    array (
+      'name' => 'image/x-icon',
+      'extensions' => 
+      array (
+        0 => 'ico',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'image/x-jng' => 
+    array (
+      'name' => 'image/x-jng',
+      'extensions' => 
+      array (
+        0 => 'jng',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'image/x-ms-bmp' => 
+    array (
+      'name' => 'image/x-ms-bmp',
+      'extensions' => 
+      array (
+        0 => 'bmp',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'font/woff' => 
+    array (
+      'name' => 'font/woff',
+      'extensions' => 
+      array (
+        0 => 'woff',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'font/woff2' => 
+    array (
+      'name' => 'font/woff2',
+      'extensions' => 
+      array (
+        0 => 'woff2',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/java-archive' => 
+    array (
+      'name' => 'application/java-archive',
+      'extensions' => 
+      array (
+        0 => 'jar',
+        1 => 'war',
+        2 => 'ear',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/json' => 
+    array (
+      'name' => 'application/json',
+      'extensions' => 
+      array (
+        0 => 'json',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/mac-binhex40' => 
+    array (
+      'name' => 'application/mac-binhex40',
+      'extensions' => 
+      array (
+        0 => 'hqx',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/msword' => 
+    array (
+      'name' => 'application/msword',
+      'extensions' => 
+      array (
+        0 => 'doc',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/pdf' => 
+    array (
+      'name' => 'application/pdf',
+      'extensions' => 
+      array (
+        0 => 'pdf',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/postscript' => 
+    array (
+      'name' => 'application/postscript',
+      'extensions' => 
+      array (
+        0 => 'ps',
+        1 => 'eps',
+        2 => 'ai',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/rtf' => 
+    array (
+      'name' => 'application/rtf',
+      'extensions' => 
+      array (
+        0 => 'rtf',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/vnd.apple.mpegurl' => 
+    array (
+      'name' => 'application/vnd.apple.mpegurl',
+      'extensions' => 
+      array (
+        0 => 'm3u8',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/vnd.google-earth.kml+xml' => 
+    array (
+      'name' => 'application/vnd.google-earth.kml+xml',
+      'extensions' => 
+      array (
+        0 => 'kml',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/vnd.google-earth.kmz' => 
+    array (
+      'name' => 'application/vnd.google-earth.kmz',
+      'extensions' => 
+      array (
+        0 => 'kmz',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/vnd.ms-excel' => 
+    array (
+      'name' => 'application/vnd.ms-excel',
+      'extensions' => 
+      array (
+        0 => 'xls',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/vnd.ms-fontobject' => 
+    array (
+      'name' => 'application/vnd.ms-fontobject',
+      'extensions' => 
+      array (
+        0 => 'eot',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/vnd.ms-powerpoint' => 
+    array (
+      'name' => 'application/vnd.ms-powerpoint',
+      'extensions' => 
+      array (
+        0 => 'ppt',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/vnd.oasis.opendocument.graphics' => 
+    array (
+      'name' => 'application/vnd.oasis.opendocument.graphics',
+      'extensions' => 
+      array (
+        0 => 'odg',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/vnd.oasis.opendocument.presentation' => 
+    array (
+      'name' => 'application/vnd.oasis.opendocument.presentation',
+      'extensions' => 
+      array (
+        0 => 'odp',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/vnd.oasis.opendocument.spreadsheet' => 
+    array (
+      'name' => 'application/vnd.oasis.opendocument.spreadsheet',
+      'extensions' => 
+      array (
+        0 => 'ods',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/vnd.oasis.opendocument.text' => 
+    array (
+      'name' => 'application/vnd.oasis.opendocument.text',
+      'extensions' => 
+      array (
+        0 => 'odt',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/vnd.openxmlformats-officedocument.presentationml.presentation' => 
+    array (
+      'name' => 'application/vnd.openxmlformats-officedocument.presentationml.presentation',
+      'extensions' => 
+      array (
+        0 => 'pptx',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' => 
+    array (
+      'name' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+      'extensions' => 
+      array (
+        0 => 'xlsx',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/vnd.openxmlformats-officedocument.wordprocessingml.document' => 
+    array (
+      'name' => 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+      'extensions' => 
+      array (
+        0 => 'docx',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/vnd.wap.wmlc' => 
+    array (
+      'name' => 'application/vnd.wap.wmlc',
+      'extensions' => 
+      array (
+        0 => 'wmlc',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/wasm' => 
+    array (
+      'name' => 'application/wasm',
+      'extensions' => 
+      array (
+        0 => 'wasm',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/x-7z-compressed' => 
+    array (
+      'name' => 'application/x-7z-compressed',
+      'extensions' => 
+      array (
+        0 => '7z',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/x-cocoa' => 
+    array (
+      'name' => 'application/x-cocoa',
+      'extensions' => 
+      array (
+        0 => 'cco',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/x-java-archive-diff' => 
+    array (
+      'name' => 'application/x-java-archive-diff',
+      'extensions' => 
+      array (
+        0 => 'jardiff',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/x-java-jnlp-file' => 
+    array (
+      'name' => 'application/x-java-jnlp-file',
+      'extensions' => 
+      array (
+        0 => 'jnlp',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/x-makeself' => 
+    array (
+      'name' => 'application/x-makeself',
+      'extensions' => 
+      array (
+        0 => 'run',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/x-perl' => 
+    array (
+      'name' => 'application/x-perl',
+      'extensions' => 
+      array (
+        0 => 'pl',
+        1 => 'pm',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/x-pilot' => 
+    array (
+      'name' => 'application/x-pilot',
+      'extensions' => 
+      array (
+        0 => 'prc',
+        1 => 'pdb',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/x-rar-compressed' => 
+    array (
+      'name' => 'application/x-rar-compressed',
+      'extensions' => 
+      array (
+        0 => 'rar',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/x-redhat-package-manager' => 
+    array (
+      'name' => 'application/x-redhat-package-manager',
+      'extensions' => 
+      array (
+        0 => 'rpm',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/x-sea' => 
+    array (
+      'name' => 'application/x-sea',
+      'extensions' => 
+      array (
+        0 => 'sea',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/x-shockwave-flash' => 
+    array (
+      'name' => 'application/x-shockwave-flash',
+      'extensions' => 
+      array (
+        0 => 'swf',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/x-stuffit' => 
+    array (
+      'name' => 'application/x-stuffit',
+      'extensions' => 
+      array (
+        0 => 'sit',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/x-tcl' => 
+    array (
+      'name' => 'application/x-tcl',
+      'extensions' => 
+      array (
+        0 => 'tcl',
+        1 => 'tk',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/x-x509-ca-cert' => 
+    array (
+      'name' => 'application/x-x509-ca-cert',
+      'extensions' => 
+      array (
+        0 => 'der',
+        1 => 'pem',
+        2 => 'crt',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/x-xpinstall' => 
+    array (
+      'name' => 'application/x-xpinstall',
+      'extensions' => 
+      array (
+        0 => 'xpi',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/xhtml+xml' => 
+    array (
+      'name' => 'application/xhtml+xml',
+      'extensions' => 
+      array (
+        0 => 'xhtml',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/xspf+xml' => 
+    array (
+      'name' => 'application/xspf+xml',
+      'extensions' => 
+      array (
+        0 => 'xspf',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/zip' => 
+    array (
+      'name' => 'application/zip',
+      'extensions' => 
+      array (
+        0 => 'zip',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'application/octet-stream' => 
+    array (
+      'name' => 'application/octet-stream',
+      'extensions' => 
+      array (
+        0 => 'msi',
+        1 => 'msp',
+        2 => 'msm',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'audio/midi' => 
+    array (
+      'name' => 'audio/midi',
+      'extensions' => 
+      array (
+        0 => 'mid',
+        1 => 'midi',
+        2 => 'kar',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'audio/mpeg' => 
+    array (
+      'name' => 'audio/mpeg',
+      'extensions' => 
+      array (
+        0 => 'mp3',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'audio/ogg' => 
+    array (
+      'name' => 'audio/ogg',
+      'extensions' => 
+      array (
+        0 => 'ogg',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'audio/x-m4a' => 
+    array (
+      'name' => 'audio/x-m4a',
+      'extensions' => 
+      array (
+        0 => 'm4a',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'audio/x-realaudio' => 
+    array (
+      'name' => 'audio/x-realaudio',
+      'extensions' => 
+      array (
+        0 => 'ra',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'video/3gpp' => 
+    array (
+      'name' => 'video/3gpp',
+      'extensions' => 
+      array (
+        0 => '3gpp',
+        1 => '3gp',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'video/mp2t' => 
+    array (
+      'name' => 'video/mp2t',
+      'extensions' => 
+      array (
+        0 => 'ts',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'video/mp4' => 
+    array (
+      'name' => 'video/mp4',
+      'extensions' => 
+      array (
+        0 => 'mp4',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'video/mpeg' => 
+    array (
+      'name' => 'video/mpeg',
+      'extensions' => 
+      array (
+        0 => 'mpeg',
+        1 => 'mpg',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'video/quicktime' => 
+    array (
+      'name' => 'video/quicktime',
+      'extensions' => 
+      array (
+        0 => 'mov',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'video/webm' => 
+    array (
+      'name' => 'video/webm',
+      'extensions' => 
+      array (
+        0 => 'webm',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'video/x-flv' => 
+    array (
+      'name' => 'video/x-flv',
+      'extensions' => 
+      array (
+        0 => 'flv',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'video/x-m4v' => 
+    array (
+      'name' => 'video/x-m4v',
+      'extensions' => 
+      array (
+        0 => 'm4v',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'video/x-mng' => 
+    array (
+      'name' => 'video/x-mng',
+      'extensions' => 
+      array (
+        0 => 'mng',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'video/x-ms-asf' => 
+    array (
+      'name' => 'video/x-ms-asf',
+      'extensions' => 
+      array (
+        0 => 'asx',
+        1 => 'asf',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'video/x-ms-wmv' => 
+    array (
+      'name' => 'video/x-ms-wmv',
+      'extensions' => 
+      array (
+        0 => 'wmv',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+    'video/x-msvideo' => 
+    array (
+      'name' => 'video/x-msvideo',
+      'extensions' => 
+      array (
+        0 => 'avi',
+      ),
+      'source' => 
+      array (
+        0 => 'nginx',
+      ),
+    ),
+  ),
+  'by-extension' => 
+  array (
+    'html' => 
+    array (
+      0 => 
+      array (
+        'name' => 'text/html',
+        'extensions' => 
+        array (
+          0 => 'html',
+          1 => 'htm',
+          2 => 'shtml',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'htm' => 
+    array (
+      0 => 
+      array (
+        'name' => 'text/html',
+        'extensions' => 
+        array (
+          0 => 'html',
+          1 => 'htm',
+          2 => 'shtml',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'shtml' => 
+    array (
+      0 => 
+      array (
+        'name' => 'text/html',
+        'extensions' => 
+        array (
+          0 => 'html',
+          1 => 'htm',
+          2 => 'shtml',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'css' => 
+    array (
+      0 => 
+      array (
+        'name' => 'text/css',
+        'extensions' => 
+        array (
+          0 => 'css',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'xml' => 
+    array (
+      0 => 
+      array (
+        'name' => 'text/xml',
+        'extensions' => 
+        array (
+          0 => 'xml',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'gif' => 
+    array (
+      0 => 
+      array (
+        'name' => 'image/gif',
+        'extensions' => 
+        array (
+          0 => 'gif',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'jpeg' => 
+    array (
+      0 => 
+      array (
+        'name' => 'image/jpeg',
+        'extensions' => 
+        array (
+          0 => 'jpeg',
+          1 => 'jpg',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'jpg' => 
+    array (
+      0 => 
+      array (
+        'name' => 'image/jpeg',
+        'extensions' => 
+        array (
+          0 => 'jpeg',
+          1 => 'jpg',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'js' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/javascript',
+        'extensions' => 
+        array (
+          0 => 'js',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'atom' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/atom+xml',
+        'extensions' => 
+        array (
+          0 => 'atom',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'rss' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/rss+xml',
+        'extensions' => 
+        array (
+          0 => 'rss',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'mml' => 
+    array (
+      0 => 
+      array (
+        'name' => 'text/mathml',
+        'extensions' => 
+        array (
+          0 => 'mml',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'txt' => 
+    array (
+      0 => 
+      array (
+        'name' => 'text/plain',
+        'extensions' => 
+        array (
+          0 => 'txt',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'jad' => 
+    array (
+      0 => 
+      array (
+        'name' => 'text/vnd.sun.j2me.app-descriptor',
+        'extensions' => 
+        array (
+          0 => 'jad',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'wml' => 
+    array (
+      0 => 
+      array (
+        'name' => 'text/vnd.wap.wml',
+        'extensions' => 
+        array (
+          0 => 'wml',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'htc' => 
+    array (
+      0 => 
+      array (
+        'name' => 'text/x-component',
+        'extensions' => 
+        array (
+          0 => 'htc',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'avif' => 
+    array (
+      0 => 
+      array (
+        'name' => 'image/avif',
+        'extensions' => 
+        array (
+          0 => 'avif',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'png' => 
+    array (
+      0 => 
+      array (
+        'name' => 'image/png',
+        'extensions' => 
+        array (
+          0 => 'png',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'svg' => 
+    array (
+      0 => 
+      array (
+        'name' => 'image/svg+xml',
+        'extensions' => 
+        array (
+          0 => 'svg',
+          1 => 'svgz',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'svgz' => 
+    array (
+      0 => 
+      array (
+        'name' => 'image/svg+xml',
+        'extensions' => 
+        array (
+          0 => 'svg',
+          1 => 'svgz',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'tif' => 
+    array (
+      0 => 
+      array (
+        'name' => 'image/tiff',
+        'extensions' => 
+        array (
+          0 => 'tif',
+          1 => 'tiff',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'tiff' => 
+    array (
+      0 => 
+      array (
+        'name' => 'image/tiff',
+        'extensions' => 
+        array (
+          0 => 'tif',
+          1 => 'tiff',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'wbmp' => 
+    array (
+      0 => 
+      array (
+        'name' => 'image/vnd.wap.wbmp',
+        'extensions' => 
+        array (
+          0 => 'wbmp',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'webp' => 
+    array (
+      0 => 
+      array (
+        'name' => 'image/webp',
+        'extensions' => 
+        array (
+          0 => 'webp',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'ico' => 
+    array (
+      0 => 
+      array (
+        'name' => 'image/x-icon',
+        'extensions' => 
+        array (
+          0 => 'ico',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'jng' => 
+    array (
+      0 => 
+      array (
+        'name' => 'image/x-jng',
+        'extensions' => 
+        array (
+          0 => 'jng',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'bmp' => 
+    array (
+      0 => 
+      array (
+        'name' => 'image/x-ms-bmp',
+        'extensions' => 
+        array (
+          0 => 'bmp',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'woff' => 
+    array (
+      0 => 
+      array (
+        'name' => 'font/woff',
+        'extensions' => 
+        array (
+          0 => 'woff',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'woff2' => 
+    array (
+      0 => 
+      array (
+        'name' => 'font/woff2',
+        'extensions' => 
+        array (
+          0 => 'woff2',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'jar' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/java-archive',
+        'extensions' => 
+        array (
+          0 => 'jar',
+          1 => 'war',
+          2 => 'ear',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'war' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/java-archive',
+        'extensions' => 
+        array (
+          0 => 'jar',
+          1 => 'war',
+          2 => 'ear',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'ear' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/java-archive',
+        'extensions' => 
+        array (
+          0 => 'jar',
+          1 => 'war',
+          2 => 'ear',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'json' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/json',
+        'extensions' => 
+        array (
+          0 => 'json',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'hqx' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/mac-binhex40',
+        'extensions' => 
+        array (
+          0 => 'hqx',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'doc' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/msword',
+        'extensions' => 
+        array (
+          0 => 'doc',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'pdf' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/pdf',
+        'extensions' => 
+        array (
+          0 => 'pdf',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'ps' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/postscript',
+        'extensions' => 
+        array (
+          0 => 'ps',
+          1 => 'eps',
+          2 => 'ai',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'eps' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/postscript',
+        'extensions' => 
+        array (
+          0 => 'ps',
+          1 => 'eps',
+          2 => 'ai',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'ai' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/postscript',
+        'extensions' => 
+        array (
+          0 => 'ps',
+          1 => 'eps',
+          2 => 'ai',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'rtf' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/rtf',
+        'extensions' => 
+        array (
+          0 => 'rtf',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'm3u8' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/vnd.apple.mpegurl',
+        'extensions' => 
+        array (
+          0 => 'm3u8',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'kml' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/vnd.google-earth.kml+xml',
+        'extensions' => 
+        array (
+          0 => 'kml',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'kmz' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/vnd.google-earth.kmz',
+        'extensions' => 
+        array (
+          0 => 'kmz',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'xls' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/vnd.ms-excel',
+        'extensions' => 
+        array (
+          0 => 'xls',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'eot' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/vnd.ms-fontobject',
+        'extensions' => 
+        array (
+          0 => 'eot',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'ppt' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/vnd.ms-powerpoint',
+        'extensions' => 
+        array (
+          0 => 'ppt',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'odg' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/vnd.oasis.opendocument.graphics',
+        'extensions' => 
+        array (
+          0 => 'odg',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'odp' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/vnd.oasis.opendocument.presentation',
+        'extensions' => 
+        array (
+          0 => 'odp',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'ods' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/vnd.oasis.opendocument.spreadsheet',
+        'extensions' => 
+        array (
+          0 => 'ods',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'odt' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/vnd.oasis.opendocument.text',
+        'extensions' => 
+        array (
+          0 => 'odt',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'pptx' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/vnd.openxmlformats-officedocument.presentationml.presentation',
+        'extensions' => 
+        array (
+          0 => 'pptx',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'xlsx' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+        'extensions' => 
+        array (
+          0 => 'xlsx',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'docx' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+        'extensions' => 
+        array (
+          0 => 'docx',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'wmlc' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/vnd.wap.wmlc',
+        'extensions' => 
+        array (
+          0 => 'wmlc',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'wasm' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/wasm',
+        'extensions' => 
+        array (
+          0 => 'wasm',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    '7z' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/x-7z-compressed',
+        'extensions' => 
+        array (
+          0 => '7z',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'cco' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/x-cocoa',
+        'extensions' => 
+        array (
+          0 => 'cco',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'jardiff' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/x-java-archive-diff',
+        'extensions' => 
+        array (
+          0 => 'jardiff',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'jnlp' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/x-java-jnlp-file',
+        'extensions' => 
+        array (
+          0 => 'jnlp',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'run' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/x-makeself',
+        'extensions' => 
+        array (
+          0 => 'run',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'pl' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/x-perl',
+        'extensions' => 
+        array (
+          0 => 'pl',
+          1 => 'pm',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'pm' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/x-perl',
+        'extensions' => 
+        array (
+          0 => 'pl',
+          1 => 'pm',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'prc' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/x-pilot',
+        'extensions' => 
+        array (
+          0 => 'prc',
+          1 => 'pdb',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'pdb' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/x-pilot',
+        'extensions' => 
+        array (
+          0 => 'prc',
+          1 => 'pdb',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'rar' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/x-rar-compressed',
+        'extensions' => 
+        array (
+          0 => 'rar',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'rpm' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/x-redhat-package-manager',
+        'extensions' => 
+        array (
+          0 => 'rpm',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'sea' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/x-sea',
+        'extensions' => 
+        array (
+          0 => 'sea',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'swf' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/x-shockwave-flash',
+        'extensions' => 
+        array (
+          0 => 'swf',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'sit' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/x-stuffit',
+        'extensions' => 
+        array (
+          0 => 'sit',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'tcl' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/x-tcl',
+        'extensions' => 
+        array (
+          0 => 'tcl',
+          1 => 'tk',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'tk' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/x-tcl',
+        'extensions' => 
+        array (
+          0 => 'tcl',
+          1 => 'tk',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'der' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/x-x509-ca-cert',
+        'extensions' => 
+        array (
+          0 => 'der',
+          1 => 'pem',
+          2 => 'crt',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'pem' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/x-x509-ca-cert',
+        'extensions' => 
+        array (
+          0 => 'der',
+          1 => 'pem',
+          2 => 'crt',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'crt' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/x-x509-ca-cert',
+        'extensions' => 
+        array (
+          0 => 'der',
+          1 => 'pem',
+          2 => 'crt',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'xpi' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/x-xpinstall',
+        'extensions' => 
+        array (
+          0 => 'xpi',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'xhtml' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/xhtml+xml',
+        'extensions' => 
+        array (
+          0 => 'xhtml',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'xspf' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/xspf+xml',
+        'extensions' => 
+        array (
+          0 => 'xspf',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'zip' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/zip',
+        'extensions' => 
+        array (
+          0 => 'zip',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'bin' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/octet-stream',
+        'extensions' => 
+        array (
+          0 => 'bin',
+          1 => 'exe',
+          2 => 'dll',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'exe' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/octet-stream',
+        'extensions' => 
+        array (
+          0 => 'bin',
+          1 => 'exe',
+          2 => 'dll',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'dll' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/octet-stream',
+        'extensions' => 
+        array (
+          0 => 'bin',
+          1 => 'exe',
+          2 => 'dll',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'deb' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/octet-stream',
+        'extensions' => 
+        array (
+          0 => 'deb',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'dmg' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/octet-stream',
+        'extensions' => 
+        array (
+          0 => 'dmg',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'iso' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/octet-stream',
+        'extensions' => 
+        array (
+          0 => 'iso',
+          1 => 'img',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'img' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/octet-stream',
+        'extensions' => 
+        array (
+          0 => 'iso',
+          1 => 'img',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'msi' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/octet-stream',
+        'extensions' => 
+        array (
+          0 => 'msi',
+          1 => 'msp',
+          2 => 'msm',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'msp' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/octet-stream',
+        'extensions' => 
+        array (
+          0 => 'msi',
+          1 => 'msp',
+          2 => 'msm',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'msm' => 
+    array (
+      0 => 
+      array (
+        'name' => 'application/octet-stream',
+        'extensions' => 
+        array (
+          0 => 'msi',
+          1 => 'msp',
+          2 => 'msm',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'mid' => 
+    array (
+      0 => 
+      array (
+        'name' => 'audio/midi',
+        'extensions' => 
+        array (
+          0 => 'mid',
+          1 => 'midi',
+          2 => 'kar',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'midi' => 
+    array (
+      0 => 
+      array (
+        'name' => 'audio/midi',
+        'extensions' => 
+        array (
+          0 => 'mid',
+          1 => 'midi',
+          2 => 'kar',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'kar' => 
+    array (
+      0 => 
+      array (
+        'name' => 'audio/midi',
+        'extensions' => 
+        array (
+          0 => 'mid',
+          1 => 'midi',
+          2 => 'kar',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'mp3' => 
+    array (
+      0 => 
+      array (
+        'name' => 'audio/mpeg',
+        'extensions' => 
+        array (
+          0 => 'mp3',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'ogg' => 
+    array (
+      0 => 
+      array (
+        'name' => 'audio/ogg',
+        'extensions' => 
+        array (
+          0 => 'ogg',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'm4a' => 
+    array (
+      0 => 
+      array (
+        'name' => 'audio/x-m4a',
+        'extensions' => 
+        array (
+          0 => 'm4a',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'ra' => 
+    array (
+      0 => 
+      array (
+        'name' => 'audio/x-realaudio',
+        'extensions' => 
+        array (
+          0 => 'ra',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    '3gpp' => 
+    array (
+      0 => 
+      array (
+        'name' => 'video/3gpp',
+        'extensions' => 
+        array (
+          0 => '3gpp',
+          1 => '3gp',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    '3gp' => 
+    array (
+      0 => 
+      array (
+        'name' => 'video/3gpp',
+        'extensions' => 
+        array (
+          0 => '3gpp',
+          1 => '3gp',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'ts' => 
+    array (
+      0 => 
+      array (
+        'name' => 'video/mp2t',
+        'extensions' => 
+        array (
+          0 => 'ts',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'mp4' => 
+    array (
+      0 => 
+      array (
+        'name' => 'video/mp4',
+        'extensions' => 
+        array (
+          0 => 'mp4',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'mpeg' => 
+    array (
+      0 => 
+      array (
+        'name' => 'video/mpeg',
+        'extensions' => 
+        array (
+          0 => 'mpeg',
+          1 => 'mpg',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'mpg' => 
+    array (
+      0 => 
+      array (
+        'name' => 'video/mpeg',
+        'extensions' => 
+        array (
+          0 => 'mpeg',
+          1 => 'mpg',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'mov' => 
+    array (
+      0 => 
+      array (
+        'name' => 'video/quicktime',
+        'extensions' => 
+        array (
+          0 => 'mov',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'webm' => 
+    array (
+      0 => 
+      array (
+        'name' => 'video/webm',
+        'extensions' => 
+        array (
+          0 => 'webm',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'flv' => 
+    array (
+      0 => 
+      array (
+        'name' => 'video/x-flv',
+        'extensions' => 
+        array (
+          0 => 'flv',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'm4v' => 
+    array (
+      0 => 
+      array (
+        'name' => 'video/x-m4v',
+        'extensions' => 
+        array (
+          0 => 'm4v',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'mng' => 
+    array (
+      0 => 
+      array (
+        'name' => 'video/x-mng',
+        'extensions' => 
+        array (
+          0 => 'mng',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'asx' => 
+    array (
+      0 => 
+      array (
+        'name' => 'video/x-ms-asf',
+        'extensions' => 
+        array (
+          0 => 'asx',
+          1 => 'asf',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'asf' => 
+    array (
+      0 => 
+      array (
+        'name' => 'video/x-ms-asf',
+        'extensions' => 
+        array (
+          0 => 'asx',
+          1 => 'asf',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'wmv' => 
+    array (
+      0 => 
+      array (
+        'name' => 'video/x-ms-wmv',
+        'extensions' => 
+        array (
+          0 => 'wmv',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+    'avi' => 
+    array (
+      0 => 
+      array (
+        'name' => 'video/x-msvideo',
+        'extensions' => 
+        array (
+          0 => 'avi',
+        ),
+        'source' => 
+        array (
+          0 => 'nginx',
+        ),
+      ),
+    ),
+  ),
+);

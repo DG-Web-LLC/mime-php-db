@@ -1,0 +1,413 @@
+<?php
+return array (
+  'by-name' => 
+  array (
+    'application/smil+xml' => 
+    array (
+      'source' => 
+      array (
+        0 => 'custom',
+      ),
+      'name' => 'application/smil+xml',
+      'extensions' => 
+      array (
+        0 => 'smil',
+        1 => 'smi',
+        2 => 'sml',
+      ),
+    ),
+    'application/vnd.grafeq' => 
+    array (
+      'source' => 
+      array (
+        0 => 'custom',
+      ),
+      'name' => 'application/vnd.grafeq',
+      'extensions' => 
+      array (
+        0 => 'gqf',
+        1 => 'gqs',
+      ),
+    ),
+    'application/vnd.nitf' => 
+    array (
+      'source' => 
+      array (
+        0 => 'custom',
+      ),
+      'name' => 'application/vnd.nitf',
+      'extensions' => 
+      array (
+        0 => 'ntf',
+        1 => 'nitf',
+      ),
+    ),
+    'application/vnd.solent.sdkm+xml' => 
+    array (
+      'source' => 
+      array (
+        0 => 'custom',
+      ),
+      'name' => 'application/vnd.solent.sdkm+xml',
+      'extensions' => 
+      array (
+        0 => 'sdkm',
+        1 => 'sdkd',
+      ),
+    ),
+    'application/vnd.visio' => 
+    array (
+      'source' => 
+      array (
+        0 => 'custom',
+      ),
+      'name' => 'application/vnd.visio',
+      'extensions' => 
+      array (
+        0 => 'vsd',
+        1 => 'vst',
+        2 => 'vsw',
+        3 => 'vss',
+      ),
+    ),
+    'application/vnd.zul' => 
+    array (
+      'source' => 
+      array (
+        0 => 'custom',
+      ),
+      'name' => 'application/vnd.zul',
+      'extensions' => 
+      array (
+        0 => 'zir',
+        1 => 'zirz',
+      ),
+    ),
+    'audio/l16' => 
+    array (
+      'source' => 
+      array (
+        0 => 'custom',
+      ),
+      'name' => 'audio/l16',
+      'extensions' => 
+      array (
+        0 => 'wav',
+        1 => 'l16',
+      ),
+    ),
+    'message/global-headers' => 
+    array (
+      'source' => 
+      array (
+        0 => 'custom',
+      ),
+      'name' => 'message/global-headers',
+      'extensions' => 
+      array (
+        0 => 'u8hdr',
+      ),
+    ),
+  ),
+  'by-extension' => 
+  array (
+    'smil' => 
+    array (
+      0 => 
+      array (
+        'source' => 
+        array (
+          0 => 'custom',
+        ),
+        'name' => 'application/smil+xml',
+        'extensions' => 
+        array (
+          0 => 'smil',
+          1 => 'smi',
+          2 => 'sml',
+        ),
+      ),
+    ),
+    'smi' => 
+    array (
+      0 => 
+      array (
+        'source' => 
+        array (
+          0 => 'custom',
+        ),
+        'name' => 'application/smil+xml',
+        'extensions' => 
+        array (
+          0 => 'smil',
+          1 => 'smi',
+          2 => 'sml',
+        ),
+      ),
+    ),
+    'sml' => 
+    array (
+      0 => 
+      array (
+        'source' => 
+        array (
+          0 => 'custom',
+        ),
+        'name' => 'application/smil+xml',
+        'extensions' => 
+        array (
+          0 => 'smil',
+          1 => 'smi',
+          2 => 'sml',
+        ),
+      ),
+    ),
+    'gqf' => 
+    array (
+      0 => 
+      array (
+        'source' => 
+        array (
+          0 => 'custom',
+        ),
+        'name' => 'application/vnd.grafeq',
+        'extensions' => 
+        array (
+          0 => 'gqf',
+          1 => 'gqs',
+        ),
+      ),
+    ),
+    'gqs' => 
+    array (
+      0 => 
+      array (
+        'source' => 
+        array (
+          0 => 'custom',
+        ),
+        'name' => 'application/vnd.grafeq',
+        'extensions' => 
+        array (
+          0 => 'gqf',
+          1 => 'gqs',
+        ),
+      ),
+    ),
+    'ntf' => 
+    array (
+      0 => 
+      array (
+        'source' => 
+        array (
+          0 => 'custom',
+        ),
+        'name' => 'application/vnd.nitf',
+        'extensions' => 
+        array (
+          0 => 'ntf',
+          1 => 'nitf',
+        ),
+      ),
+    ),
+    'nitf' => 
+    array (
+      0 => 
+      array (
+        'source' => 
+        array (
+          0 => 'custom',
+        ),
+        'name' => 'application/vnd.nitf',
+        'extensions' => 
+        array (
+          0 => 'ntf',
+          1 => 'nitf',
+        ),
+      ),
+    ),
+    'sdkm' => 
+    array (
+      0 => 
+      array (
+        'source' => 
+        array (
+          0 => 'custom',
+        ),
+        'name' => 'application/vnd.solent.sdkm+xml',
+        'extensions' => 
+        array (
+          0 => 'sdkm',
+          1 => 'sdkd',
+        ),
+      ),
+    ),
+    'sdkd' => 
+    array (
+      0 => 
+      array (
+        'source' => 
+        array (
+          0 => 'custom',
+        ),
+        'name' => 'application/vnd.solent.sdkm+xml',
+        'extensions' => 
+        array (
+          0 => 'sdkm',
+          1 => 'sdkd',
+        ),
+      ),
+    ),
+    'vsd' => 
+    array (
+      0 => 
+      array (
+        'source' => 
+        array (
+          0 => 'custom',
+        ),
+        'name' => 'application/vnd.visio',
+        'extensions' => 
+        array (
+          0 => 'vsd',
+          1 => 'vst',
+          2 => 'vsw',
+          3 => 'vss',
+        ),
+      ),
+    ),
+    'vst' => 
+    array (
+      0 => 
+      array (
+        'source' => 
+        array (
+          0 => 'custom',
+        ),
+        'name' => 'application/vnd.visio',
+        'extensions' => 
+        array (
+          0 => 'vsd',
+          1 => 'vst',
+          2 => 'vsw',
+          3 => 'vss',
+        ),
+      ),
+    ),
+    'vsw' => 
+    array (
+      0 => 
+      array (
+        'source' => 
+        array (
+          0 => 'custom',
+        ),
+        'name' => 'application/vnd.visio',
+        'extensions' => 
+        array (
+          0 => 'vsd',
+          1 => 'vst',
+          2 => 'vsw',
+          3 => 'vss',
+        ),
+      ),
+    ),
+    'vss' => 
+    array (
+      0 => 
+      array (
+        'source' => 
+        array (
+          0 => 'custom',
+        ),
+        'name' => 'application/vnd.visio',
+        'extensions' => 
+        array (
+          0 => 'vsd',
+          1 => 'vst',
+          2 => 'vsw',
+          3 => 'vss',
+        ),
+      ),
+    ),
+    'zir' => 
+    array (
+      0 => 
+      array (
+        'source' => 
+        array (
+          0 => 'custom',
+        ),
+        'name' => 'application/vnd.zul',
+        'extensions' => 
+        array (
+          0 => 'zir',
+          1 => 'zirz',
+        ),
+      ),
+    ),
+    'zirz' => 
+    array (
+      0 => 
+      array (
+        'source' => 
+        array (
+          0 => 'custom',
+        ),
+        'name' => 'application/vnd.zul',
+        'extensions' => 
+        array (
+          0 => 'zir',
+          1 => 'zirz',
+        ),
+      ),
+    ),
+    'wav' => 
+    array (
+      0 => 
+      array (
+        'source' => 
+        array (
+          0 => 'custom',
+        ),
+        'name' => 'audio/l16',
+        'extensions' => 
+        array (
+          0 => 'wav',
+          1 => 'l16',
+        ),
+      ),
+    ),
+    'l16' => 
+    array (
+      0 => 
+      array (
+        'source' => 
+        array (
+          0 => 'custom',
+        ),
+        'name' => 'audio/l16',
+        'extensions' => 
+        array (
+          0 => 'wav',
+          1 => 'l16',
+        ),
+      ),
+    ),
+    'u8hdr' => 
+    array (
+      0 => 
+      array (
+        'source' => 
+        array (
+          0 => 'custom',
+        ),
+        'name' => 'message/global-headers',
+        'extensions' => 
+        array (
+          0 => 'u8hdr',
+        ),
+      ),
+    ),
+  ),
+);
