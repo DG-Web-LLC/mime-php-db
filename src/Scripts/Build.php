@@ -9,8 +9,19 @@ use DGWebLLC\MimePhpDb\Fetch\Iana;
 use DGWebLLC\MimePhpDb\Fetch\Nginx;
 
 class Build {
+    public static function start(Event $e): void {
+        $io = $e->getIO();
+
+        $update = $io->askConfirmation(
+            "\nUpdate the mime-db datasource?\nPlease note that this process may take a few minutes to complete. Do you wish to proceed? [y/n]: ",
+            false
+        );
+
+        if ($update)
+            self::fetchDataSources($e);
+    }
     const DATA_DIR = __DIR__.DIRECTORY_SEPARATOR."..".DIRECTORY_SEPARATOR."data";
-    public static function postInstall(Event $e) {
+    public static function fetchDataSources(Event $e) {
         $io = $e->getIO();
 
         $io->write("Starting data source scape. . .");
@@ -27,18 +38,6 @@ class Build {
 
         self::combineDataSources($e, $sourceFiles);
     }
-    public static function postUpdate(Event $e): void {
-        $io = $e->getIO();
-
-        $update = $io->askConfirmation(
-            "\nUpdate the mime-db datasource?\nPlease note that this process may take a few minutes to complete. Do you wish to proceed? [y/n]: ",
-            false
-        );
-
-        if ($update)
-            self::postInstall($e);
-    }
-
     private static function combineDataSources(Event $e, array $sources): void {
         $io = $e->getIO();
         $data = ['by-name' => [], 'by-extension' => []];

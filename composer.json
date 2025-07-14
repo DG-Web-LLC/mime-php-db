@@ -33,11 +33,8 @@
         "phpunit/phpunit": "12"
     },
     "scripts": {
-        "post-update-cmd": [
-            "DGWebLLC\\MimePhpDb\\Scripts\\Build::postUpdate"
-        ],
-        "post-install-cmd": [
-            "DGWebLLC\\MimePhpDb\\Scripts\\Build::postInstall"
+        "update-data-sources": [
+            "DGWebLLC\\MimePhpDb\\Scripts\\Build::start"
         ]
     }
 }
