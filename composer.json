@@ -1,0 +1,43 @@
+{
+    "name": "dg-web-llc/mime-php-db",
+    "description": "A PHP Media Type Database",
+    "type": "library",
+    "version": "1.0.0",
+    "keywords": [
+        "mime",
+        "db",
+        "type",
+        "types",
+        "database",
+        "php"
+    ],
+    "autoload": {
+        "psr-4": {
+            "DGWebLLC\\MimePhpDb\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DGWebLLC\\MimePhpDb\\Test\\": "test/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Devin Grinstead",
+            "email": "devin.grinstead@dgwebllc.com",
+            "role": "developer",
+            "homepage": "https://www.dgwebllc.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "12"
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "DGWebLLC\\MimePhpDb\\Scripts\\Build::postUpdate"
+        ],
+        "post-install-cmd": [
+            "DGWebLLC\\MimePhpDb\\Scripts\\Build::postInstall"
+        ]
+    }
+}
