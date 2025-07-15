@@ -17,7 +17,7 @@ Run the follow composer command:
 composer require dg-web-llc/mime-php-db
 ```
 
-Or add the follow entries to your root composer.json file in the repositories collection and require objects respectively:
+Or add the follow entries to your root composer.json file in the repositories collection and require object respectively:
 
 ```json
 "repositories" [
@@ -44,6 +44,9 @@ composer update
 
 > [!NOTE]
 > To ensure you package stays up to date, it is recommend to run the update command after first install and periodically.
+
+> [!WARNING]
+> This operation can take multiple minutes to run.
 
 For ease of use, the library is designed to run an "update-data-sources" script from composer. To enable this feature you must first create the following entry in your root composer.json file's script object.
 
