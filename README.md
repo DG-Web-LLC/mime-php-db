@@ -105,12 +105,19 @@ application/java-archive	apache,iana,nginx	jar,war,ear
   - custom - The custom media types are defined directly in this package.
 - extensions - The associated extensions, this can zero or more.
 
+### Creating the object
+
+```php
+// Imports the Object From namespace DGWebLLC\MimePhpDb
+use DGWebLLC\MimePhpDb\MimeDb;
+
+// Creates the MimeDb object
+$db = new MimeDb();
+```
+
 ### Fetching a mime type by name
 
 ```php
-// Creates the MimeDb object
-$db = new MimeDb();
-
 // Prints the extensions array to the screen
 print_r($db['application/java-archive']->extensions);
 
@@ -123,3 +130,26 @@ Expected Output: Array
 )
 */
 ```
+
+### Iterating over MimeDb
+
+```php
+// Iterates over the dataset using a foreach loop until application/java-archive is found
+foreach ($db as $mimeType) {
+    print_r($mimeType);
+
+    if ($mimeType->name == 'application/java-archive')
+        break;
+}
+```
+
+### Applying filters
+
+```php
+// Similar to the array_filter method a callback function can be defined to filter the array
+$mime = $db->filter(function ($mime) {
+    return $mime->name == 'application/java-archive';
+});
+```
+
+For more information see the [array_filter](https://www.php.net/manual/en/function.array-filter.php) method.
