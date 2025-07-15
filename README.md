@@ -6,7 +6,12 @@ A PHP Media Type Database. This database is a large complication of mime types a
 - https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types
 - https://www.iana.org/assignments/media-types/media-types.xml
 
+> [!NOTE]
+> This package is not designed to provide or replace php mime type detection
+
 ## Installation
+
+
 
 ### Database Update and Build
 
