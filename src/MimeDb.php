@@ -4,16 +4,22 @@
  */
 namespace DGWebLLC\MimePhpDb;
 
+use ArrayAccess;
+use Exception;
+use Iterator;
+
 /**
+ * MimeDb - A wrapper class that serializes the Media Type Data into an iterable and indexable collection
  * 
  */
-class MimeDb {
+class MimeDb implements ArrayAccess, Iterator {
     const DATA_FILE = Config::DATA_DIR.DIRECTORY_SEPARATOR."data";
     /**
-     * Summary of _byName
+     * Summary of _data
      * @var array
      */
-    private array $_byName = [];
+    private array $_data = [];
+    private array $_keys = [];
     /**
      * Initializes the MimeDB data container
      */
@@ -25,7 +31,8 @@ class MimeDb {
             foreach ($rows as $row) {
                 $mime = new Mime($row);
 
-                $this->_byName[$mime->name] = $mime;
+                $this->_data[$mime->name] = $mime;
+                $this->_keys[] = $mime->name;
             }
         }
     }
@@ -40,6 +47,42 @@ class MimeDb {
      * @return array
      */
     public function filter(callable $callback) {
-        return array_filter($this->_byName, $callback);
+        return array_filter($this->_data, $callback);
     }
+
+    // ArrayAccess
+    public function offsetExists(mixed $offset): bool {
+        return isset($this->_data[$offset]);
+    }
+    public function offsetGet(mixed $offset): mixed {
+        return $this->_data[$offset];
+    }
+    public function offsetSet(mixed $offset, mixed $value): void {
+        throw new Exception("Object is readonly");
+    }
+    public function offsetUnset(mixed $offset): void {
+        throw new Exception("Object is readonly");
+    }
+    // End ArrayAccess
+    
+    // Iterator
+    private int $pos = 0;
+    public function current(): mixed {
+        return $this->_data[$this->_keys[$this->pos]];
+    }
+    public function key(): mixed {
+        return $this->_keys[$this->pos];
+    }
+    public function next(): void {
+        $this->pos++;
+    }
+    public function rewind(): void {
+        $this->pos = 0;
+    }
+    public function valid(): bool {
+        return $this->pos < count($this->_keys);
+    }
+    // End Iterator
+
+    // TODO: Implement LINQ Like query operators
 }

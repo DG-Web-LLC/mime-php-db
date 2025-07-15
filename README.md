@@ -11,6 +11,9 @@ A PHP Media Type Database. This database is a large complication of mime types a
 
 ## Installation
 
+```bash
+composer require dg-web-llc/mime-php-db
+```
 
 
 ### Database Update and Build
