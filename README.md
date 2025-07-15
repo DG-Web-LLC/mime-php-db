@@ -152,4 +152,4 @@ $mime = $db->filter(function ($mime) {
 });
 ```
 
-For more information see the [array_filter](https://www.php.net/manual/en/function.array-filter.php) method.
+For more information about array filter callbacks see the [array_filter](https://www.php.net/manual/en/function.array-filter.php) method.
