@@ -19,12 +19,16 @@ composer require dg-web-llc/mime-php-db
 
 or add the follow entries to your composer.json file
 
+### repositories
+
 ```json
 {
     "type": "vcs",
     "url": "https://github.com/DG-Web-LLC/mime-php-db.git"
 }
 ```
+
+### require
 
 ```json
 "dg-web-llc/mime-php-db": "dev-main"
