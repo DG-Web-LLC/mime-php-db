@@ -18,18 +18,21 @@ class Build {
 
         $io = $e->getIO();
 
+        // Asks the user for confirmation only if interactive mode is enabled.
         $update = $io->askConfirmation(
             "\nUpdate the mime-db datasource?\nPlease note that this process may take a few minutes to complete. Do you wish to proceed? [y/n]: ",
-            false
+            !$io->isInteractive()
         );
 
         if ( !file_exists(Config::DATA_DIR.DIRECTORY_SEPARATOR.".") )
             throw new DirectoryNotFound("Data Directory Not Found");
 
-        if ($update)
+        if ($update) {
             self::fetchDataSources($e);
-
-        $io->write("\nData Source Update Complete\n");
+            $io->write("\nData Source Update Complete\n");
+        } else {
+            $io->write("\nDatasource Update Aborted\n");
+        }
     }
     public static function fetchDataSources(Event $e) {
         $io = $e->getIO();
