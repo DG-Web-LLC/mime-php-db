@@ -32,9 +32,21 @@ use DGWebLLC\MimePhpDb\Exception\Mime\ItemNotEqual;
  *  echo $mime."\n".$cpy."\n";
  */
 class Mime {
-    public $name = "";
-    public $source = [];
-    public $extensions = [];
+    /**
+     * The Media Type Name, normally expressed in type/subtype format
+     * @var string
+     */
+    public string $name = "";
+    /**
+     * An array of sources, this identifies where the data was retrieved from
+     * @var string[]
+     */
+    public array $source = [];
+    /**
+     * An array of extensions, this identifies the expected file extension for the media type
+     * @var string[]
+     */
+    public array $extensions = [];
     /**
      * Creates a mime object from ether a serialized string or an array of named parameters
      * 
@@ -78,8 +90,14 @@ class Mime {
                implode(",", $this->source)."\t".
                implode(",", $this->extensions);
     }
-
-    public function merge(Mime $mime) {
+    /**
+     * Merges the values of two Mime Objects if the names are equal
+     * 
+     * @param \DGWebLLC\MimePhpDb\Mime $mime The Object to merge
+     * @throws \DGWebLLC\MimePhpDb\Exception\Mime\ItemNotEqual If the names do not match
+     * @return void
+     */
+    public function merge(self $mime) {
         if (strtolower($this->name) != strtolower($mime->name)) {
             throw new ItemNotEqual("Mime name must match!");
         }
