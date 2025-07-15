@@ -53,7 +53,7 @@ For ease of use, the library is designed to run an "update-data-sources" script 
 ```json
 "scripts": {
     "update-mimedb": [
-        "@putenv COMPOSER=vender/dg-web-llc/mime-php-db/composer.json",
+        "@putenv COMPOSER=vendor/dg-web-llc/mime-php-db/composer.json",
         "@composer update-data-sources"
     ]
 }
