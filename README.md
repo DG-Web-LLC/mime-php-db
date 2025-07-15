@@ -11,10 +11,30 @@ A PHP Media Type Database. This database is a large complication of mime types a
 
 ## Installation
 
+Run the follow composer command
+
 ```bash
 composer require dg-web-llc/mime-php-db
 ```
 
+or add the follow entries to your composer.json file
+
+```json
+{
+    "type": "vcs",
+    "url": "https://github.com/DG-Web-LLC/mime-php-db.git"
+}
+```
+
+```json
+"dg-web-llc/mime-php-db": "dev-main"
+```
+
+then run the composer command
+
+```bash
+composer update
+```
 
 ### Database Update and Build
 
