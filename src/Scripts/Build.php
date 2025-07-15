@@ -3,7 +3,8 @@ namespace DGWebLLC\MimePhpDb\Scripts;
 
 use Composer\Script\Event;
 use DGWebLLC\MimePhpDb\Config;
-use DGWebLLC\MimePhpDb\Exception\Fetch\FileWriteError;
+use DGWebLLC\MimePhpDb\Exception\Build\FileWriteError;
+use DGWebLLC\MimePhpDb\Exception\Build\DirectoryNotFound;
 use DGWebLLC\MimePhpDb\Fetch\Apache;
 use DGWebLLC\MimePhpDb\Fetch\Custom;
 use DGWebLLC\MimePhpDb\Fetch\Iana;
@@ -18,6 +19,9 @@ class Build {
             "\nUpdate the mime-db datasource?\nPlease note that this process may take a few minutes to complete. Do you wish to proceed? [y/n]: ",
             false
         );
+
+        if ( !file_exists(Config::DATA_DIR.DIRECTORY_SEPARATOR.".") )
+            throw new DirectoryNotFound("Data Directory Not Found");
 
         if ($update)
             self::fetchDataSources($e);
