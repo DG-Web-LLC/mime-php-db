@@ -107,3 +107,19 @@ application/java-archive	apache,iana,nginx	jar,war,ear
 
 ### Fetching a mime type by name
 
+```php
+// Creates the MimeDb object
+$db = new MimeDb();
+
+// Prints the extensions array to the screen
+print_r($db['application/java-archive']->extensions);
+
+/*
+Expected Output: Array
+(
+    [0] => jar
+    [1] => war
+    [2] => ear
+)
+*/
+```
