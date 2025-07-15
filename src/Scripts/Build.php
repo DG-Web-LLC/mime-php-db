@@ -13,6 +13,9 @@ use DGWebLLC\MimePhpDb\Mime;
 
 class Build {
     public static function start(Event $e): void {
+        $vendor = $e->getComposer()->getConfig()->get('vendor-dir');
+        require_once $vendor.DIRECTORY_SEPARATOR.'autoload.php';
+
         $io = $e->getIO();
 
         $update = $io->askConfirmation(
@@ -25,6 +28,8 @@ class Build {
 
         if ($update)
             self::fetchDataSources($e);
+
+        $io->write("\nData Source Update Complete\n");
     }
     public static function fetchDataSources(Event $e) {
         $io = $e->getIO();
@@ -71,6 +76,6 @@ class Build {
             throw new FileWriteError("Could Not Write File: {$file}");
         }
 
-        $io->write("\nData Source Build Complete\n");
+        $io->write("\nData Source Combination Complete\n");
     }
 }
