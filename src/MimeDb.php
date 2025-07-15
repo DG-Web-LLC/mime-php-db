@@ -34,6 +34,8 @@ class MimeDb implements ArrayAccess, Iterator {
                 $this->_data[$mime->name] = $mime;
                 $this->_keys[] = $mime->name;
             }
+        } else {
+            trigger_error("Data File Not Found", E_USER_WARNING);
         }
     }
     /**
