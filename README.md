@@ -20,7 +20,7 @@ composer require dg-web-llc/mime-php-db
 Or add the follow entries to your root composer.json file in the repositories collection and require object respectively:
 
 ```json
-"repositories" [
+"repositories": [
     {
         "type": "vcs",
         "url": "https://github.com/DG-Web-LLC/mime-php-db.git"
@@ -43,12 +43,12 @@ composer update
 ### Database Update and Build
 
 > [!NOTE]
-> To ensure you package stays up to date, it is recommend to run the update command after first install and periodically.
+> To ensure you package stays up to date, it is recommend to run the "update-data-sources" command after first install and periodically.
 
 > [!WARNING]
 > This is a long running operation that can take multiple minutes to run.
 
-For ease of use, the library is designed to run an "update-data-sources" script from composer. To enable this feature you must first create the following entry in your root composer.json file's script object.
+For ease of use, the library is designed to run an "update-data-sources" script from composer. To enable this feature you must first create the following entry in your root composer.json file's scripts object.
 
 ```json
 "scripts": {
@@ -67,11 +67,11 @@ composer update-mimedb
 
 ### Configuration
 
-The configuration file for this package is a statically accessed class of constants named Config. This is take advantage of namespace's name collision prevention. It is normally not required to edit any of the entries contained in the Config class.
+The configuration file for this package is a statically accessed class of constants named Config. It is normally not required to edit any of the entries contained in the Config class.
 
 #### HTTP_ATTEMPTS
 
-This configuration setting defines the number of request attempts preformed before an http request will throw an error. This is to account for the event a request times out or fails during the data source aggregation. The default is 5.
+This configuration setting defines the number of request attempted before an http error is throw. This is to account for the event a request times out or fails during the data source aggregation. The default is 5.
 
 ```php
 const HTTP_ATTEMPTS = 5;
