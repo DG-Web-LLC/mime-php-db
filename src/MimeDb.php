@@ -5,6 +5,7 @@
 namespace DGWebLLC\MimePhpDb;
 
 use ArrayAccess;
+use Countable;
 use Exception;
 use Iterator;
 
@@ -12,7 +13,7 @@ use Iterator;
  * MimeDb - A wrapper class that serializes the Media Type Data into an iterable and indexable collection
  * 
  */
-class MimeDb implements ArrayAccess, Iterator {
+class MimeDb implements ArrayAccess, Iterator, Countable {
     const DATA_FILE = Config::DATA_DIR.DIRECTORY_SEPARATOR."data";
     /**
      * Summary of _data
@@ -82,9 +83,15 @@ class MimeDb implements ArrayAccess, Iterator {
         $this->pos = 0;
     }
     public function valid(): bool {
-        return $this->pos < count($this->_keys);
+        return isset($this->_keys[$this->pos]);
     }
     // End Iterator
+
+    // Countable
+    public function count(): int {
+        return count($this->_keys);
+    }
+    // End Countable
 
     // TODO: Implement LINQ Like query operators
 }
