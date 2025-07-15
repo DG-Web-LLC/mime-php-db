@@ -100,7 +100,7 @@ application/java-archive	apache,iana,nginx	jar,war,ear
 - name - The media type name or mime type. This follows the standard format of type/subtype.
 - source - The data source that defined the media type, this can be one or more sources.
   - apahce - [Apache common media types](https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types)
-  - iana - [IANA-defined media types](https://www.iana.org/assignments/media-types/media-types.xml)
+  - iana - [IANA media types](https://www.iana.org/assignments/media-types/media-types.xml)
   - nginx - [Nginx media types](https://hg.nginx.org/nginx/raw-file/default/conf/mime.types)
   - custom - The custom media types are defined directly in this package.
 - extensions - The associated extensions, this can zero or more.
