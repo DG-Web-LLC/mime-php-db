@@ -2,11 +2,16 @@
 
 namespace DGWebLLC\MimePhpDb\Fetch;
 
+use DGWebLLC\MimePhpDb\Config;
+use DGWebLLC\MimePhpDb\ConsoleIO;
+use DGWebLLC\MimePhpDb\Mime;
 use DGWebLLC\MimePhpDb\Exception\Fetch\DirectoryNotFound;
 use DGWebLLC\MimePhpDb\Exception\Fetch\FileWriteError;
-use DGWebLLC\MimePhpDb\ConsoleIO;
+use DGWebLLC\MimePhpDb\Exception\Fetch\HttpFetchError;
 use Composer\IO\IOInterface;
-
+/**
+ * Summary of AbstractClass
+ */
 abstract class AbstractClass {
     public function __construct(string $name = "", IOInterface|null $io = null) {
         // Sets the user-agent header, maybe server configuration are set to automatically reject requests with
@@ -36,28 +41,21 @@ abstract class AbstractClass {
     protected string $name;
     /**
      * Internal storage for the data table
-     * @var array
+     * @var Mime[]
      */
-    protected array $_data = [
-        "by-name" => [],
-        "by-extension" => [],
-    ];
+    protected array $_data = [];
     /**
      * This function fills the internal data table, sorting Mime Type information by both extension and name
      * @return void
      */
     abstract public function fetch();
 
-    public function __get($name) {
-        switch ($name) {
-            case 'byName':
-                return $this->_data['by-name'] ?? [];
-            case 'byExtension':
-                return $this->_data['by-extension'] ?? [];
-        }
-    }
+    /**
+     * Summary of __toString
+     * @return string
+     */
     public function __toString() {
-        return var_export($this->_data, true);
+        return implode("\n", $this->_data);
     }
     /**
      * Writes the internal data table to a valid php array file
@@ -75,12 +73,63 @@ abstract class AbstractClass {
             $file = "php://output";
 
         $this->_io ->write("Writing data source to file: $file");
-        $result = file_put_contents($file, "<?php\nreturn ".((string)$this).";\n");
+        $result = file_put_contents($file, (string)$this);
 
         if ( $result === false ) {
             throw new FileWriteError("Could Not Write File: {$file}");
         }
 
         return $file;
+    }
+    /**
+     * Summary of addMime
+     * @param \DGWebLLC\MimePhpDb\Mime $mime
+     * @return void
+     */
+    public function addMime(Mime $mime) {
+        if ( !isset($this->_data[$mime->name]) ) {
+            $this->_data[$mime->name] = $mime;
+        } else {
+            $this->_data[$mime->name]->merge($mime);
+        }
+    }
+    /**
+     * Summary of removeMime
+     * @param \DGWebLLC\MimePhpDb\Mime $mime
+     * @return void
+     */
+    public function removeMime(Mime $mime) {
+        if ( isset($this->_data[$mime->name]) ) {
+            unset($this->_data[$mime->name]);
+        }
+    }
+    /**
+     * Summary of httpRequest
+     * @param string $url
+     * @throws \DGWebLLC\MimePhpDb\Exception\Fetch\HttpFetchError
+     * @return string
+     */
+    protected function httpRequest(string $url): string {
+        $data = false;
+        $attempts = 0;
+
+        while ($data === false && $attempts < Config::HTTP_ATTEMPTS) {
+            $data = @file_get_contents($url, false, $this->_context);
+            $attempts++;
+
+            if ($data === false) {
+                // Allows a delay between fetch requests
+                sleep(1);
+            }
+        }
+
+        if ($data === false) {
+            throw new HttpFetchError(
+                "HTTP Resource Unreachable: $url\n".
+                "Error: ". error_get_last()['message']
+            );
+        }
+
+        return (string)$data;
     }
 }

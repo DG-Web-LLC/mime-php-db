@@ -4,9 +4,8 @@
  */
 namespace DGWebLLC\MimePhpDb\Fetch;
 
-use \Exception;
 use \SimpleXMLElement;
-use DGWebLLC\MimePhpDb\Exception\Fetch\HttpFetchError;
+use DGWebLLC\MimePhpDb\Mime;
 use DGWebLLC\MimePhpDb\Exception\Fetch\ParseError;
 use DGWebLLC\MimePhpDb\Fetch\AbstractClass;
 use Composer\IO\IOInterface;
@@ -42,7 +41,7 @@ class Iana extends AbstractClass {
      */
     const NOISE_FILTER = '/\(.+?(?:\)|$)|(?:are\sboth|where|documents\sare|is\sdeclared).*$|#|:/im';
     /**
-     * Summary of EXCLUSION_LIST
+     * List of words and phrases that indicate a media type does not have an extension
      * @var array
      */
     const EXCLUSION_LIST = [
@@ -87,16 +86,9 @@ class Iana extends AbstractClass {
             $progress['record']['total'] = count($registry->record);
 
             foreach ($registry->record as $record) {
-                $entry = $this->fetchTemplate($record->file);
+                $entry = $this->fetchTemplateMime($record->file);
 
-                $this->_data['by-name'][$entry['name']] = $entry;
-
-                foreach ($entry['extensions'] as $ext) {
-                    if ( isset($this->_data['by-extension'][$ext]) )
-                        $this->_data['by-extension'][$ext][] = $entry;
-                    else
-                        $this->_data['by-extension'][$ext] = [$entry];
-                }
+                $this->addMime(new Mime($entry));
                 
                 $this->_io->write(
                     sprintf(
@@ -118,14 +110,7 @@ class Iana extends AbstractClass {
     }
     
     private function fetchBaseXML(): bool|SimpleXMLElement {
-        $data = file_get_contents(self::DATASOURCE_URL."/media-types.xml", false, $this->_context);
-
-        if ($data === false) {
-            throw new HttpFetchError(
-                "HTTP Resource Unreachable: ".self::DATASOURCE_URL."/media-types.xml\n".
-                "Error: ". error_get_last()['message']
-            );
-        }
+        $data = $this->httpRequest(self::DATASOURCE_URL."/media-types.xml");
 
         $xml = simplexml_load_string($data);
 
@@ -135,15 +120,8 @@ class Iana extends AbstractClass {
 
         return $xml;
     }
-    private function fetchTemplate(string $name) {
-        $data = file_get_contents(self::DATASOURCE_URL."/".$name, false, $this->_context);
-
-        if ($data === false) {
-            throw new HttpFetchError(
-                "HTTP Resource Unreachable: ".self::DATASOURCE_URL."/{$name}\n".
-                "Error: ".error_get_last()['message']
-            );
-        }
+    private function fetchTemplateMime(string $name) {
+        $data = $this->httpRequest(self::DATASOURCE_URL."/".$name);
 
         $mime = [
             "name" => $name,

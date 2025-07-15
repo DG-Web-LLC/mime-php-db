@@ -8,6 +8,7 @@ use DGWebLLC\MimePhpDb\Exception\Fetch\HttpFetchError;
 use DGWebLLC\MimePhpDb\Exception\Fetch\ParseError;
 use DGWebLLC\MimePhpDb\Fetch\AbstractClass;
 use Composer\IO\IOInterface;
+use DGWebLLC\MimePhpDb\Mime;
 
 class Nginx extends AbstractClass {
     public function __construct(IOInterface|null $io = null) {
@@ -38,14 +39,7 @@ class Nginx extends AbstractClass {
         $this->_io->write("\nFetching NGINX Media Type data from ".self::DATASOURCE_URL."\n");
 
         $matches = null;
-        $data = file_get_contents(self::DATASOURCE_URL, false, $this->_context);
-        
-        if (!$data) {
-            throw new HttpFetchError(
-                "HTTP Resource Unreachable: ".self::DATASOURCE_URL."\n".
-                "Error: ".error_get_last()['message']
-            );
-        }
+        $data = $this->httpRequest(self::DATASOURCE_URL);
 
         $matchLen = preg_match_all(self::LINE_REGEX, $data, $matches, PREG_SET_ORDER);
 
@@ -61,14 +55,7 @@ class Nginx extends AbstractClass {
                 "source" => [$this->name]
             ];
 
-            $this->_data['by-name'][$mime['name']] = $mime;
-
-            foreach ($mime['extensions'] as $ext) {
-                if ( isset($this->_data['by-extension'][$ext]) )
-                    $this->_data['by-extension'][$ext][] = $mime;
-                else
-                    $this->_data['by-extension'][$ext] = [$mime];
-            }
+            $this->addMime(new Mime($mime));
 
             $this->_io->write(sprintf("\rProcessing entry: [%04d of %04d]", $i, $matchLen), false);
             $i++;
