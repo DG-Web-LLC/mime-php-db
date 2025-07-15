@@ -1,8 +1,0 @@
-application/smil+xml	custom	smil,smi,sml
-application/vnd.grafeq	custom	gqf,gqs
-application/vnd.nitf	custom	ntf,nitf
-application/vnd.solent.sdkm+xml	custom	sdkm,sdkd
-application/vnd.visio	custom	vsd,vst,vsw,vss
-application/vnd.zul	custom	zir,zirz
-audio/l16	custom	wav,l16
-message/global-headers	custom	u8hdr
