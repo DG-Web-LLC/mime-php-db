@@ -44,7 +44,6 @@ composer update
 
 > [!NOTE]
 > To ensure you package stays up to date, it is recommend to run the "update-data-sources" command after first install and periodically.
-
 > [!WARNING]
 > This is a long running operation that can take multiple minutes to run.
 
@@ -94,7 +93,7 @@ Usage of the package should be done through the class wrapper MimeDb. It provide
 The aggregated data source files are a combination of tab delimited and comma delimited text files. Each line represent an entry and each column is delimited by a tab. Arrays contained in the columns are delimited by commas.
 
 ```txt
-application/java-archive&emsp;apache,iana,nginx&emsp;jar,war,ear
+application/java-archive    apache,iana,nginx    jar,war,ear
 ```
 
 - name - The media type name or mime type. This follows the standard format of type/subtype.
