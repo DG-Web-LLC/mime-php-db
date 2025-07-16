@@ -43,7 +43,7 @@ composer update
 ### Database Update and Build
 
 > [!NOTE]
-> To ensure you package stays up to date, it is recommend to run the "update-data-sources" command after first install and periodically.
+> To ensure your package stays up to date, it is required to run the "update-data-sources" command after first install and then recommended to run periodically.
 
 > [!WARNING]
 > This is a long running operation that can take multiple minutes to run.
@@ -63,6 +63,17 @@ Once this entry is added you will be able to run the script with the follow comm
 
 ```bash
 composer update-mimedb
+```
+
+The data sources can also be updated directly from PHP, the only requirement is to ensure that your composer vendor/autoload.php file is included.
+
+> [!WARNING]
+> The build script emits directory info directly to the standard output stream (php://stdout).
+
+```php
+require './vendor/autoload.php';
+
+DGWebLLC\MimePhpDb\Scripts\Build::buildDataSource();
 ```
 
 ### Configuration
