@@ -2,9 +2,9 @@
 
 A PHP Media Type Database. This database is a large compilation of mime types and basic information about them. The library includes a build script that aggregates data from three main sources:
 
-- https://hg.nginx.org/nginx/raw-file/default/conf/mime.types
-- https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types
-- https://www.iana.org/assignments/media-types/media-types.xml
+- [https://hg.nginx.org/nginx/raw-file/default/conf/mime.types](https://hg.nginx.org/nginx/raw-file/default/conf/mime.types)
+- [https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types](https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types)
+- [https://www.iana.org/assignments/media-types/media-types.xml](https://www.iana.org/assignments/media-types/media-types.xml)
 
 > [!NOTE]
 > This package is not designed to provide or replace php mime type detection.
@@ -94,7 +94,7 @@ Usage of the package should be done through the class wrapper MimeDb. It provide
 The aggregated data source files are a combination of tab delimited and comma delimited text files. Each line represent an entry and each column is delimited by a tab. Arrays contained in the columns are delimited by commas.
 
 ```txt
-application/java-archive	apache,iana,nginx	jar,war,ear
+application/java-archive&emsp;apache,iana,nginx&emsp;jar,war,ear
 ```
 
 - name - The media type name or mime type. This follows the standard format of type/subtype.
