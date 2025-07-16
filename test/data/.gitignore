@@ -1,0 +1,7 @@
+# Ignore everything in this directory
+*
+# Except this file
+!.gitignore
+
+# This directory is for the cache only.
+# This is to avoid overwriting the database during "composer update" events
