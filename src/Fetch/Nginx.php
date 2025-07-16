@@ -4,6 +4,7 @@
  */
 namespace DGWebLLC\MimePhpDb\Fetch;
 
+use DGWebLLC\MimePhpDb\ConsoleIO;
 use DGWebLLC\MimePhpDb\Exception\Fetch\HttpFetchError;
 use DGWebLLC\MimePhpDb\Exception\Fetch\ParseError;
 use DGWebLLC\MimePhpDb\Fetch\AbstractClass;
@@ -11,7 +12,7 @@ use Composer\IO\IOInterface;
 use DGWebLLC\MimePhpDb\Mime;
 
 class Nginx extends AbstractClass {
-    public function __construct(IOInterface|null $io = null) {
+    public function __construct(IOInterface|ConsoleIO|null $io = null) {
         parent::__construct("nginx", $io);
     }
     /**

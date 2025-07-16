@@ -24,10 +24,10 @@ class MimeDb implements ArrayAccess, Iterator, Countable {
     /**
      * Initializes the MimeDB data container
      */
-    public function __construct() {
-        if ( file_exists(self::DATA_FILE) ) {
-            $fdata = file_get_contents(self::DATA_FILE);
-            $rows = explode("\n", $fdata);
+    public function __construct(string $dataFile = self::DATA_FILE) {
+        if ( file_exists($dataFile) ) {
+            $fData = file_get_contents($dataFile);
+            $rows = explode("\n", $fData);
 
             foreach ($rows as $row) {
                 $mime = new Mime($row);

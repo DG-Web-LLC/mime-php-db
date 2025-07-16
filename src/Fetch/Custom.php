@@ -4,6 +4,7 @@
  */
 namespace DGWebLLC\MimePhpDb\Fetch;
 
+use DGWebLLC\MimePhpDb\ConsoleIO;
 use DGWebLLC\MimePhpDb\Fetch\AbstractClass;
 use Composer\IO\IOInterface;
 use DGWebLLC\MimePhpDb\Mime;
@@ -13,7 +14,7 @@ use DGWebLLC\MimePhpDb\Mime;
  * un-parsable using the current parsing logic.
  */
 class Custom extends AbstractClass {
-    public function __construct(IOInterface|null $io = null) {
+    public function __construct(IOInterface|ConsoleIO|null $io = null) {
         parent::__construct("custom", $io);
     }
 

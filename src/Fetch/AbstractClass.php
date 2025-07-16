@@ -13,7 +13,7 @@ use Composer\IO\IOInterface;
  * Summary of AbstractClass
  */
 abstract class AbstractClass {
-    public function __construct(string $name = "", IOInterface|null $io = null) {
+    public function __construct(string $name = "", IOInterface|ConsoleIO|null $io = null) {
         // Sets the user-agent header, maybe server configuration are set to automatically reject requests with
         // a proper user-agent
         $this->_context = stream_context_create([
@@ -22,7 +22,12 @@ abstract class AbstractClass {
             ]
         ]);
         $this->name = $name;
-        $this->_io = new ConsoleIO($io);
+
+        if ($io != null && $io instanceof ConsoleIO) {
+            $this->_io = $io;
+        } else {
+            $this->_io = new ConsoleIO($io);
+        }
     }
     /**
      * The context stream to provide to file_get_content when preforming http requests.

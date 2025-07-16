@@ -4,6 +4,7 @@
  */
 namespace DGWebLLC\MimePhpDb\Fetch;
 
+use DGWebLLC\MimePhpDb\ConsoleIO;
 use \SimpleXMLElement;
 use DGWebLLC\MimePhpDb\Mime;
 use DGWebLLC\MimePhpDb\Exception\Fetch\ParseError;
@@ -11,7 +12,7 @@ use DGWebLLC\MimePhpDb\Fetch\AbstractClass;
 use Composer\IO\IOInterface;
 
 class Iana extends AbstractClass {
-    public function __construct(IOInterface|null $io = null) {
+    public function __construct(IOInterface|ConsoleIO|null $io = null) {
         parent::__construct("iana", $io);
     }
     /**
