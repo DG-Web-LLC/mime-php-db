@@ -157,9 +157,9 @@ foreach ($db as $mimeType) {
 ### Applying filters
 
 ```php
-// Similar to the array_filter method a callback function can be defined to filter the array
+// Similar to the array_filter method, a callback function can be defined to filter the array
 
-// This filter returns an object collection contain the application/java-archive media type
+// This filter returns an object collection containing the application/java-archive media type
 $mime = $db->filter(function ($mime) {
     return $mime->name == 'application/java-archive';
 });
