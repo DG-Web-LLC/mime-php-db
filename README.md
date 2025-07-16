@@ -68,7 +68,7 @@ composer update-mimedb
 The data sources can also be updated directly from PHP, the only requirement is to ensure that your composer vendor/autoload.php file is included.
 
 > [!WARNING]
-> The build script emits directory info directly to the standard output stream (php://stdout).
+> The build script emits directory info to the standard output stream (php://stdout).
 
 ```php
 require './vendor/autoload.php';
